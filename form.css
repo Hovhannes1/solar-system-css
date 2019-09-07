@@ -58,14 +58,13 @@
   background-color: lightgray;
   border: 1px solid darkblue;
   box-sizing: border-box;
-  height: 650px;
+  height: calc(100vh - 100px);
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: 2px 0;
 }
 .container .animation {
-  transition: flex-grow 6s linear;
+  transition: flex-grow 0.24s linear;
 }
 .container div:hover {
   flex-grow: 1;

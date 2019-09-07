@@ -1,0 +1,215 @@
+*{
+  outline: none;
+  margin: 0;
+  padding: 0
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  background: url("https://coverfiles.alphacoders.com/561/56130.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header .header__logo{
+   margin-top: 10px;
+   margin-left: 25px;
+   float: left;
+   margin-right: 20px; 
+}  
+
+#logoImage {
+   width: 80px;
+   height: 80px;
+   border-radius: 50%;
+   animation: rotation 10s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.header li  {
+  list-style: none;
+  position: relative;
+  top: 65px;
+  margin-left: 20px;
+  display: inline;
+  padding: 7px;
+}
+
+.header a:hover{
+    opacity: 0.3;
+    text-shadow: 2px 2px grey;
+}
+
+.header ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+
+.container {
+   background-image: url("Stars.jpg");
+   background-size: cover;
+   height: 100vh;
+   width: 100%;
+   position: relative;
+   overflow: hidden;
+   margin: 2px 0 0;
+}
+ .container .container__sun {
+   position: absolute;
+   top: -350px;
+   right: -350px;
+   background-image: url("sun.png");
+   background-size: cover;
+   width: 900px;
+   height: 900px;
+   border-radius: 50%;
+   animation: rotation 200s linear infinite;
+}
+ @keyframes rotation {
+   from {
+     transform: rotate(0deg);
+  }
+   to {
+     transform: rotate(359deg);
+  }
+}
+ .container .container__planet {
+   width: 2000px;
+   margin-left: 310px;
+   margin-top: 50px;
+   transform: rotate(-60deg);
+   animation: rotationPl-Sun 100s infinite linear;
+}
+ @keyframes rotationPl-Sun {
+   from {
+     transform: rotate(-60deg);
+  }
+   to {
+     transform: rotate(23deg);
+  }
+}
+ .container .container__planet > div:first-child {
+   position: relative;
+   width: 17em;
+   height: 17em;
+   top: 32%;
+   left: 0;
+   background-image: url("1.png");
+   border-radius: 50%;
+   background-size: cover;
+   animation: rotation1 25s infinite linear;
+}
+ @keyframes rotation1 {
+   from {
+     transform: rotate(0deg);
+  }
+   to {
+     transform: rotate(359deg);
+  }
+}
+ .container .container__planet > div:first-child .container__moon1 {
+   position: absolute;
+   width: 420px;
+   left: -50px;
+   top: 130px;
+   animation: rotationM1 25s infinite linear backwards;
+}
+ @keyframes rotationM1 {
+   from {
+     transform: rotate(0deg);
+  }
+   to {
+     transform: rotate(359deg);
+  }
+}
+ .container .container__planet > div:first-child .container__moon1 :first-child {
+   width: 40px;
+   height: 40px;
+   background-image: url("planet.jpg");
+   background-color: green;
+   background-size: cover;
+   border-radius: 50%;
+   animation: rotationM1C 8s infinite linear;
+}
+ @keyframes rotationM1C {
+   from {
+     transform: rotate(0deg);
+  }
+   to {
+     transform: rotate(-359deg);
+  }
+}
+ .container .container__planet > div:first-child .container__moon2 {
+   position: absolute;
+   width: 670px;
+   left: -190px;
+   top: 110px;
+   animation: rotationM2 10s infinite linear;
+}
+ @keyframes rotationM2 {
+   from {
+     transform: rotate(0deg);
+  }
+   to {
+     transform: rotate(-359deg);
+  }
+}
+ .container .container__planet > div:first-child .container__moon2 :first-child {
+   background-image: url("2.jpg");
+   background-size: cover;
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+   animation: rotationM2C 10s infinite alternate-reverse;
+}
+ @keyframes rotationM2C {
+   from {
+     transform: rotate(0deg);
+  }
+   to {
+     transform: rotate(359deg);
+  }
+}
+ .container .container__planet > div:first-child .container__moon3 {
+   position: absolute;
+   width: 970px;
+   left: -250px;
+   top: 114px;
+   animation: rotationM3 50s infinite linear;
+}
+ @keyframes rotationM3 {
+   from {
+     transform: rotate(0deg);
+  }
+   to {
+     transform: rotate(360deg);
+  }
+}
+ .container .container__planet > div:first-child .container__moon3 :first-child {
+   background-image: url("3.png");
+   background-size: cover;
+   float: left;
+   width: 80px;
+   height: 80px;
+   border-radius: 50%;
+   animation: rotationM3C 30s infinite linear;
+}
+ @keyframes rotationM3C {
+   from {
+     transform: rotate(-360deg);
+  }
+   to {
+     transform: rotate(0deg);
+  }
+}
